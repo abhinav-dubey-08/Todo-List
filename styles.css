@@ -1,0 +1,163 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f3f7;
+    background-image: url('todo.jpg');
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+#todoApp {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+}
+
+#exportPDF {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #28a745;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#exportPDF:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+#dateTimeDisplay {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#nameInput {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#nameInput label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+#userName {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+#taskSection {
+    margin-top: 20px;
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+li:hover {
+    background-color: #e8f5e9;
+    transform: translateY(-2px);
+}
+
+li.completed {
+    text-decoration: line-through;
+    background-color: #d4edda;
+}
+
+.tick {
+    font-size: 20px;
+    color: green;
+    cursor: pointer;
+}
+
+button.delete-btn {
+    background-color: #dc3545;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+button.delete-btn:hover {
+    background-color: #c82333;
+}
+
+#addTaskSection {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#addTaskSection input {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#addTaskSection button {
+    background-color: #007bff;
+}

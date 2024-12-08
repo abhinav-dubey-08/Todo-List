@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <div id="todoApp">
+        <button id="exportPDF" onclick="downloadPDF()">Save as PDF</button>
+        <div id="dateTimeDisplay"></div>
+        <div id="nameInput">
+            <label for="userName">Enter Your Name:</label>
+            <input type="text" id="userName" placeholder="Your Name" required>
+            <button onclick="startApp()">Submit</button>
+        </div>
+        <div id="taskSection" style="display: none;">
+            <h3 id="userNameDisplay"></h3>
+            <div class="task-header">
+                <span>Task</span>
+                <span>Actions</span>
+            </div>
+            <ul id="taskList"></ul>
+            <div id="addTaskSection">
+                <input type="text" id="taskInput" placeholder="Add your task here" required>
+                <button onclick="addTask()">Add Task</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
